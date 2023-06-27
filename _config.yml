@@ -1,0 +1,16 @@
+name: Jekyll Themes
+url: https://leesiy.github.io/
+description: Insert tagline here
+remote_theme : mmistakes/minimal-mistakes
+permalink: /themes/:title/
+
+plugins: [jekyll-paginate]
+
+highlighter: pygments
+paginate: 20
+
+markdown: rdiscount
+rdiscount:
+    extensions: ['smart']
+
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'vendor']
