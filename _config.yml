@@ -1,16 +1,43 @@
-name: Jekyll Themes
-url: https://leesiy.github.io/
-description: Insert tagline here
-remote_theme : mmistakes/minimal-mistakes
-permalink: /themes/:title/
+remote_theme : "/cards-jekyll-template"
+# Site settings
+title: Willian Justen - Desenvolvedor Front End
+description: A blog about lorem ipsum dolor sit amet
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://leesiy.github.io/" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
-plugins: [jekyll-paginate]
+# User settings
+username: Lorem Ipsum
+user_description: Anon Developer at Lorem Ipsum Dolor
+email: anon@anon.com
+twitter_username: lorem_ipsum
+github_username:  lorem_ipsum
+gplus_username:  lorem_ipsum
+disqus_username: lorem_ipsum
 
-highlighter: pygments
-paginate: 20
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
 
-markdown: rdiscount
-rdiscount:
-    extensions: ['smart']
 
-exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'vendor']
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
+# Links to include in menu navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+  - title: Series
+    url: /series
+  - title: Tags
+    url: /tags
+  - title: About Me
+    url: /about
+
+# exclude my node related stuff
+exclude: ['package.json', 'src', 'node_modules']
